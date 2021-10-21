@@ -11,10 +11,10 @@
 /node_modules
 
 # profiling files
-chrome-profiler-events*.json
+/chrome-profiler-events*.json
 
 # IDEs and editors
-/.idea
+.idea
 .project
 .classpath
 .c9/
@@ -31,13 +31,13 @@ chrome-profiler-events*.json
 .history/*
 
 # misc
-/.sass-cache
+.sass-cache
 /connect.lock
 /coverage
 /libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
+/npm-debug.log
+/yarn-error.log
+/testem.log
 /typings
 
 # System Files

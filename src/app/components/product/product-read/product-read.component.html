@@ -1,0 +1,36 @@
+<h1 class="title">
+  Lista de Produtos
+</h1>
+<table class="table mat-elevation-z20">
+  <thead>
+    <tr class="border">
+      <th scope="col"> Id. </th>
+      <th scope="col"> Name </th>
+      <th scope="col"> Price </th>
+      <th scope="col"> Ações </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr scope="row" *ngFor="let product of products">
+      <td> {{product.id}} </td>
+      <td> {{product.name}} </td>
+      <td> {{product.price | currency: 'BRL' }} </td>
+      <td>
+        <a routerLink="/products/update/{{product.id}}">
+          <span class="edit">
+            <i class="material-icons ">
+              edit
+            </i>
+          </span>
+        </a>
+        <a routerLink="/products/delete/{{product.id}}">
+          <span class="delete">
+            <i class="material-icons">
+              delete
+            </i>
+          </span>
+        </a>
+      </td>
+    </tr>
+  </tbody>
+</table>

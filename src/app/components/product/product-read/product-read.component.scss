@@ -1,0 +1,52 @@
+.title {
+  font-size: 2.5rem;
+  padding: 30px 0 30px 0;
+}
+
+.border {
+  border-bottom: 2px solid black;
+}
+
+.table {
+  width: 100%;
+  padding: 15px;
+
+  th,
+  td {
+    text-align: left;
+    padding: 15px;
+    font-size: 1rem;
+  }
+
+  th {
+    font-weight: 700;
+  }
+
+  .edit,
+  .delete {
+    padding: 10px;
+    border-radius: 10px;
+    vertical-align: middle;
+  }
+
+  .edit {
+    background-color: #98FB98;
+    color: #008000;
+    margin-right: 40px;
+    border: 1px solid #008000;
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+
+  .delete {
+    background-color: #FFA07A;
+    color: #e35e6b;
+    border: 1px solid #e35e6b;
+
+    i {
+      font-size: 1.2rem;
+    }
+  }
+}

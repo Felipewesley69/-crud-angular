@@ -1,0 +1,21 @@
+<mat-card class="mat-elevation-z5">
+  <mat-card-title>
+    Deletar Produto
+  </mat-card-title>
+  <form>
+    <mat-form-field>
+      <input type="text" disabled matInput placeholder="Nome do produto" [(ngModel)]="product.name" name="name">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="number" disabled matInput placeholder="Preço R$" [(ngModel)]="product.price" name="price">
+    </mat-form-field>
+  </form>
+  <mat-card-content>
+    <button mat-raised-button color="warn" class="m-r-20 m-t-20 " (click)="deleteProduct()">
+      <span class="material-icons"> delete </span>
+    </button>
+    <button mat-raised-button color="" class="m-t-20 " (click)="cancel()">
+      Cancel&nbsp;&nbsp;<span class="material-icons"> clear </span>
+    </button>
+  </mat-card-content>
+</mat-card>

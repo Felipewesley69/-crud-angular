@@ -1,0 +1,25 @@
+<mat-card class="mat-elevation-z5">
+  <mat-card-title>
+    Cadastrar Novo Produto
+  </mat-card-title>
+
+  <form>
+    <mat-form-field>
+      <input type="text" autocomplete="off" matInput placeholder="Nome do produto" [(ngModel)]="product.name"
+        name="name">
+    </mat-form-field>
+    <mat-form-field>
+      <input type="number" autocomplete="off" matInput placeholder="Preço R$" [(ngModel)]="product.price" name="price">
+    </mat-form-field>
+  </form>
+
+  <mat-card-content>
+    <button mat-raised-button color="primary" class="m-r-20 m-t-20 " (click)="createProduct()">
+      <span class="material-icons"> save </span>
+    </button>
+
+    <button mat-raised-button color="" class="m-t-20 " (click)="cancelProduct()">
+      Cancel&nbsp;&nbsp;<span class="material-icons"> clear </span>
+    </button>
+  </mat-card-content>
+</mat-card>
